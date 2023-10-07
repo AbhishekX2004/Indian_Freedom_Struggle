@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.c1{
+    animation: fadeInOut ease-in-out 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.c2{
+    animation: fadeIn ease-in 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: #F4C430;
+}
+
+.loadname{
+    font-size: small;
+    text-indent: right;
+    font-weight: 600;
+}
+
+img{
+    height:25vh;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
