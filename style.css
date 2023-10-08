@@ -8,7 +8,8 @@
     text-align: center;
     height: 100vh;
     font-weight: bolder;
-    font-size: 3vh;
+    font-size: 4vh;
+    font-family: 'Pacifico', cursive;
 }
 
 .c1{
@@ -17,20 +18,22 @@
 
 .c1-1{
     
-    animation: fadeInOut ease-out 15s infinite;
+    animation: fadeInOut 15s infinite;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .c1-2{
     animation: fadeInOut 15s ease-in infinite;
     animation-iteration-count: 1;
     animation-fill-mode:forwards;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .c2{
     position: absolute;
-    animation: fadeIn 30s infinite;
+    animation: fadeIn 15s infinite;
     animation-delay: 15s;
     animation-iteration-count: 1;
     animation-fill-mode:backwards;
@@ -50,8 +53,17 @@
     border:none;
 }
 
+.card_container{
+    animation: fadeIn 5s;
+    animation-delay:21s;
+    animation-iteration-count: 1;
+    animation-fill-mode:backwards;
+    display: flex;
+    flex-direction: column;
+}
+
 .gradient-background {
-    background: linear-gradient(300deg, #F4C430, white,#046A38);
+    background: linear-gradient(300deg, #046A38, white,#F4C430);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
 }
