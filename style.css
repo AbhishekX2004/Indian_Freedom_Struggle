@@ -13,18 +13,27 @@
 
 .c1{
     position: absolute;
-    animation: fadeInOut ease-out 8s forwards;
+}
+
+.c1-1{
+    
+    animation: fadeInOut ease-out 15s infinite;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
+.c1-2{
+    animation: fadeInOut 15s ease-in infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
 .c2{
     position: absolute;
+    animation: fadeIn 30s infinite;
     animation-delay: 15s;
-    animation: fadeIn ease-in 1s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    background-color: #F4C430;
+    animation-fill-mode:backwards;
 }
 
 .loadname{
@@ -33,15 +42,37 @@
     font-weight: 600;
 }
 
-img{
-    height:25vh;
+.bharat_mata{
+    height:220px;
+}
+
+.intro_card{
+    border:none;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #F4C430, white,#046A38);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+  
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
 }
 
 @keyframes fadeInOut {
     0%, 100% {
         opacity: 0;
     }
-    50%, 85% {
+    75% {
         opacity: 1;
     }
 }
